@@ -21,12 +21,7 @@ public class App {
 
         FormulaValidator validator = new FormulaValidator();
 
-        // (A v ~A) v (B v ~B) retorna erro pelo validador
-        // Reescreva como (A v (~A)) v (B v (~B))
-
-        // A ^ ~A retorna erro pelo validador
-        // Reescreva como A ^ (~A)
-        String formula = "A ^ (~A)";
+        String formula = "A ^ ~A";
 
         if (validator.validar(formula)) {
             System.out.println("Fórmula bem formada.");
